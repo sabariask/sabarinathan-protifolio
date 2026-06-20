@@ -2,6 +2,24 @@
 
 A modern, responsive personal portfolio website built with **Angular 21** and deployed on **Firebase Hosting**. This site showcases projects, experience, skills, and contact information with smooth scrolling navigation and URL fragment support for direct linking to sections.
 
+## 🌐 Live Demo
+
+**View the deployed portfolio:** [https://sabari-nathan-mani.web.app/](https://sabari-nathan-mani.web.app/)
+
+Feel free to explore different sections and share the URL with others. Direct links to sections work seamlessly:
+- [Portfolio - Experience](https://sabari-nathan-mani.web.app/#experience)
+- [Portfolio - Projects](https://sabari-nathan-mani.web.app/#projects)
+- [Portfolio - Skills](https://sabari-nathan-mani.web.app/#skills)
+
+## Features
+
+- ✨ Smooth scroll navigation with URL fragment updates
+- 📱 Fully responsive design
+- 🎨 Modern UI with SCSS styling
+- 🔗 Shareable links to portfolio sections (e.g., `yoursite.com#experience`)
+- ⚡ Fast, optimized Angular application
+- 🚀 Deployed on Firebase Hosting
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
