@@ -1,0 +1,54 @@
+<section id="education">
+  <div class="edu-inner">
+    <div class="section-header">
+      <span class="section-label">Education & Certifications</span>
+      <h2 class="section-title">Academic Background</h2>
+      <p class="section-sub">Foundation that drives my engineering mindset</p>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card degree-card">
+        <div class="card-accent"></div>
+        <div class="card-content">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-meta">Undergraduate Degree · 2017 – 2021</div>
+          <h3 class="edu-title">B.Tech — Information Technology</h3>
+          <p class="edu-institution">University College of Engineering, Villupuram</p>
+          <p class="edu-desc">
+            Four-year engineering program covering data structures, algorithms, software
+            engineering, database systems, computer networks, and object-oriented programming. Built
+            strong fundamentals that support enterprise-level Angular and Spring Boot development.
+          </p>
+          <div class="edu-tags">
+            <span class="edu-tag">Data Structures</span>
+            <span class="edu-tag">Algorithms</span>
+            <span class="edu-tag">OOP</span>
+            <span class="edu-tag">DBMS</span>
+            <span class="edu-tag">Computer Networks</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs-section">
+        <h3 class="certs-title">Certifications & Learning</h3>
+        <div class="cert-list">
+          <div class="cert-card" *ngFor="let cert of certifications">
+            <div class="cert-icon" [style.background]="cert.iconBg">
+              {{ cert.icon }}
+            </div>
+            <div class="cert-info">
+              <p class="cert-name">{{ cert.name }}</p>
+              <p class="cert-issuer">{{ cert.issuer }}</p>
+            </div>
+            <div
+              class="cert-badge"
+              [class]="cert.status === 'In Progress' ? 'badge-progress' : 'badge-done'"
+            >
+              {{ cert.status }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

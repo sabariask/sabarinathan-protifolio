@@ -1,0 +1,43 @@
+<section id="skills">
+  <div class="skills-inner">
+    <div class="section-header">
+      <span class="section-label">Technical Skills</span>
+      <h2 class="section-title">What I Work With</h2>
+      <p class="section-sub">Technologies I use daily and tools I've built real products with</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group" *ngFor="let group of skillGroups">
+        <div class="group-header">
+          <span class="group-icon">{{ group.icon }}</span>
+          <h3 class="group-title">{{ group.title }}</h3>
+        </div>
+        <div class="skill-tags">
+          <div class="skill-tag" *ngFor="let skill of group.skills" [class.primary]="skill.primary">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span *ngIf="skill.version" class="skill-version">{{ skill.version }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proficiency-section">
+      <h3 class="prof-title">Proficiency Overview</h3>
+      <div class="prof-bars">
+        <div class="prof-item" *ngFor="let item of proficiencies">
+          <div class="prof-header">
+            <span class="prof-name">{{ item.name }}</span>
+            <span class="prof-percent">{{ item.level }}%</span>
+          </div>
+          <div class="prof-bar">
+            <div
+              class="prof-fill"
+              [style.width]="item.level + '%'"
+              [style.background]="item.color"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

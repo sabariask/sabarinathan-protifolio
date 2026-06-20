@@ -1,0 +1,207 @@
+section {
+  background: white;
+  padding: 5rem 2rem;
+}
+
+.edu-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #38bdf8, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.section-sub {
+  font-size: 15px;
+  color: #64748b;
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.edu-card {
+  background: #f8fafc;
+  border: 0.5px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.edu-card:hover {
+  border-color: #38bdf8;
+}
+
+.card-accent {
+  height: 4px;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.edu-icon {
+  font-size: 32px;
+  margin-bottom: 0.75rem;
+}
+
+.edu-meta {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.edu-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.edu-institution {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.edu-desc {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.edu-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.edu-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  background: white;
+  border: 0.5px solid #e2e8f0;
+  border-radius: 20px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.certs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.certs-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border: 0.5px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.cert-card:hover {
+  border-color: #38bdf8;
+  transform: translateX(4px);
+}
+
+.cert-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.cert-info {
+  flex: 1;
+}
+
+.cert-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 2px;
+}
+
+.cert-issuer {
+  font-size: 11px;
+  color: #64748b;
+  margin: 0;
+}
+
+.badge-done {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(74, 222, 128, 0.1);
+  color: #16a34a;
+  border: 0.5px solid rgba(74, 222, 128, 0.3);
+  white-space: nowrap;
+}
+
+.badge-progress {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(251, 146, 60, 0.1);
+  color: #ea580c;
+  border: 0.5px solid rgba(251, 146, 60, 0.3);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+}
